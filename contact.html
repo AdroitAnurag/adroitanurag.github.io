@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Me</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="whole">
+    <div class="contact">
+      <div class="container">
+        <div id="feedback">
+          <div class="head">
+            <h3>Messenger</h3>
+            <p>Feel free to contact me !!</p>
+          </div>
+          <form action="#" id="form" method="post" name="form">
+            <input name="vname" placeholder="Your Name" type="text" value="" />
+            <input
+              name="vemail"
+              placeholder="Your Email"
+              type="text"
+              value=""
+            />
+            <input name="sub" placeholder="Subject" type="text" value="" />
+            <label>Your Queries Here ... </label>
+            <textarea
+              name="msg"
+              placeholder="Type your text here..."
+            ></textarea>
+            <input id="send" name="submit" type="submit" value="Send" />
+          </form>
+          <h3><?php include "contact_form.php"?></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

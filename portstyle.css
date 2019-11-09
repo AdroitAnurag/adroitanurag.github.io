@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: RobotMonoMedium;
+  src: url("./fonts/RobotoMono-Medium.ttf");
+}
+@font-face {
+  font-family: RobotMonoRegular;
+  src: url("./fonts/RobotoMono-Regular.ttf");
+}
+body {
+    font-family: RobotMonoMedium;
+    background-image: url("./images/material-blue.png");
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+.portfolio-page {
+    position: relative;
+    overflow: visible;
+    height: 500px;
+    width: 50%;
+    align-content: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
+    display: block;
+    justify-content: flex-end;
+  }
+  body h1 {
+    font-family: RobotMonoMedium;
+    color: #A6ACAF;
+    font-size: 100px;
+    align-self: center;
+    align-content: flex-end;
+    object-position: center;
+    text-shadow: 3px 3px #797D7F;
+    bottom: 40px;
+    left: 40px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    background: #2980B9;
+  }
+  .portfolio-page img {
+    background-image: url("./images/material-blue.png");
+    background-size: auto;
+    transition: transform 0.3s ease-in;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    align-self: center;
+    width: auto;
+    height: 500px;
+    background-size: cover;
+    object-position: center;
+    object-fit: fill;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px #1F618D;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .portfolio-page p {
+      font-family:RobotMonoRegular;
+      font-size: 20px;
+      text-align: center;
+      color: #17202A;
+      text-shadow: 0.9px 0.9px #1B2631;
+      background: #B3B6B7;
+  }
+  .row {
+    display: flex;
+  }
+
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+  .Designing {
+    transition: transform 0.3s ease-in;
+    display: flex;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    align-self: center;
+    width: auto;
+    height: 500px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+  }
+  .Designing:hover {
+      transform: translate(0%,5%);
+  }

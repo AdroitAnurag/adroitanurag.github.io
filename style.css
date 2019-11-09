@@ -1,0 +1,446 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: RobotMonoMedium;
+  src: url("./fonts/RobotoMono-Medium.ttf");
+}
+@font-face {
+  font-family: RobotMonoRegular;
+  src: url("./fonts/RobotoMono-Regular.ttf");
+}
+body {
+  font-family: RobotMonoMedium;
+  background-image: url("./images/material-orange.jpg");
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+.portfolio {
+  color: #F4D03F;
+  text-shadow: 2px 2px #784212;
+  overflow: hidden;
+  position: relative ;
+  background-image: url("./images/material-orange.jpg");
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+nav {
+  min-height: 10vh;
+  width: 99%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+.pic {
+  font-size: 20px;
+}
+.me {
+  overflow: hidden;
+  height: 500px;
+  width: 50%;
+  align-content: center;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+}
+.me img {
+  height: 500px;
+  transition: transform 0.3s ease-in;
+  cursor: pointer;
+  position: relative;
+  align-content: center;
+  align-self: center;
+  justify-content: flex;
+}
+.me-1 {
+  transform: translate(0%,10%);
+  object-position: center;
+}
+.me-2 {
+  transform: translate(0%,-10%);
+  object-position: center;
+}
+.me:hover .me-1 {
+  transform: translate(0%,0%);
+}
+.me:hover .me-2 {
+  transform: translate(0%,0%);
+}
+.details {
+  grid-column: 2/3;
+  align-self: end;
+}
+.details h1 {
+  color: #F1C40F;
+  text-shadow: 2px 2px #943126 ;
+  position: relative;
+  text-align: center;
+  font-size: 100px;
+  font-family: RobotMonoMedium;
+}
+.details h2 {
+  position: relative;
+  text-align: center;
+  font-family: RobotMonoRegular;
+  font-size: 50px;
+  padding: 20px 0px;
+}
+.details h3 {
+  position: relative;
+  text-align: center;
+  font-family: RobotMonoRegular;
+  font-size: 35px;
+  padding: 20px 0px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #F4D03F;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #E74C3C;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+.bg img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: inherit;
+  display: flex;
+}
+.myabout {
+  overflow: hidden;
+  grid-column: 2/3;
+  align-self: end;
+  font-size: 30px;
+  font-family: RobotMonoRegular;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.myabout h1 {
+  color: #212f3d;
+  overflow: hidden;
+  grid-column: 2/3;
+  align-self: end;
+  text-shadow: 2px 2px #A04000;
+}
+.myabout h3 {
+  color: #DF8519;
+  object-fit: cover;
+  overflow: hidden;
+  grid-column: 2/3;
+  align-self: end;
+  text-shadow: 2px 2px #943126;
+}
+.about-wp img {
+  position: fixed;
+  align-content: space-around;
+  align-self: auto;
+}
+.peace-text p {
+  font-family: RobotMonoMedium;
+  color: #f1c40f;
+  font-size: 100px;
+  align-self: center;
+  align-content: flex-end;
+  object-position: center;
+  text-shadow: 3px 3px #b7950b;
+  bottom: 40px;
+  left: 40px;
+  top: 50%;
+  left: 50%;
+}
+body {
+  background-image: url("./images/Services_WP.jpg");
+}
+.buttonclick {
+  background-color: #e74c3c;
+  border: none;
+  color: #0f0f10;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin: 10 10 auto;
+  display: block;
+  align-content: center;
+  align-self: center;
+}
+.Services {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+.freelace {
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  padding: 20vh 20vh;
+  align-self: center;
+  display: block;
+  margin: 0 auto;
+}
+.freelace fiverr-seller-content {
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  padding: 20vh 20vh;
+  align-self: center;
+  display: block;
+  margin: 0 auto;
+}
+.web-dev {
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+.web-dev img {
+  transition: transform 0.3s ease-in;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+  align-self: center;
+  width: auto;
+  height: 500px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gfx-design {
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+.gfx-design img {
+  transition: transform 0.3s ease-in;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+  align-self: center;
+  width: auto;
+  height: 500px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.vdo-editing {
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+.vdo-editing img {
+  transition: transform 0.3s ease-in;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+  align-self: center;
+  width: auto;
+  height: 500px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.social-media-marketing {
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+.social-media-marketing img {
+  transition: transform 0.3s ease-in;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+  align-self: center;
+  width: auto;
+  height: 500px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.heading h1 {
+  font-family: RobotMonoMedium;
+  color: #e74c3c;
+  font-size: 100px;
+  align-self: center;
+  align-content: flex-end;
+  object-position: center;
+  text-shadow: 3px 3px #7b241c;
+  bottom: 40px;
+  left: 40px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+.button {
+  height: 32px;
+  padding-left: 36px;
+  padding-right: 10px;
+  border: 1px solid #f4d03f;
+  background: #d35400 url("./images/sidenavico.png") no-repeat 500px center;
+  cursor: pointer;
+  font-size: 20px;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  transform: translate(0%,5%);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: RobotMonoRegular;
+  font-size: 10px;
+  color: #b7950b;
+}
+.gallery-desc h2 {
+  font-family: RobotMonoMedium;
+  font-size: 45px;
+  color: #e74c3c;
+}
+.contact h3,
+p,
+label {
+  text-align: center;
+  font-family: "RobotMonoRegular", sans-serif;
+  color: #006400;
+}
+h2 {
+  font-family: "RobotMonoRegular", sans-serif;
+}
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+  height: 30px;
+  box-shadow: 1px 1px 12px gray;
+  border-radius: 3px;
+  border: none;
+}
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  padding: 5px;
+  box-shadow: 1px 1px 12px gray;
+  border-radius: 3px;
+}
+#send {
+  width: 103%;
+  height: 45px;
+  margin-top: 40px;
+  border-radius: 3px;
+  background-color: #cd853f;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "RobotMonoRegular", sans-serif;
+  font-size: 18px;
+}
+div#feedback {
+  text-align: center;
+  height: 520px;
+  width: 330px;
+  padding: 20px 25px 20px 15px;
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  border: 1px solid #cd853f;
+  font-family: "RobotMonoRegular", sans-serif;
+  float: left;
+}
+.container {
+  width: 960px;
+  margin: 40px auto;
+}
+.whole {
+  height: fit-content;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  align-content: center;
+  padding: 20vh 20vh;
+  align-self: center;
+  display: block;
+  background-size: cover;
+  block-size: auto;
+}
+.insta-widget {
+  cursor: crosshair;
+}
